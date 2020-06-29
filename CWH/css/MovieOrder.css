@@ -1,0 +1,17 @@
+body{
+    
+    background-image:url(../img/Sup-RoadTripBG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    width:100%;
+    max-width: 100%;
+}
+
+.bg{
+    height: 40vh;
+    width: 40vh;
+    background-size: cover;
+    background-image: url(../img/35mm-acrylic-black-and-white-color-2733337.jpg);
+}   
+

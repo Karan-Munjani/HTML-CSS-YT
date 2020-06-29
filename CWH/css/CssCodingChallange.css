@@ -1,0 +1,48 @@
+.drop-cap::first-letter{
+    font-size: 200%;
+    font-weight: bold;
+    line-height: 1;
+    float: left;
+    width: 0.9em;
+    
+}
+
+.highlight{
+    background-color: yellow;
+}
+
+.centre{
+    text-align: center;
+}
+
+.justify{
+    text-align: justify;
+}
+h1 + p{
+    margin-top: 0px;
+}
+
+h1{
+    margin-bottom: 0px;
+    border-bottom: 1px solid rgba(224,224,224 ,1);
+}
+
+.caps{
+    text-transform: uppercase;
+}
+
+.indent{
+    text-indent: 2rem;
+}
+
+a {
+    color: darkblue;
+    font-weight: bold;
+}
+.no-link a {
+    color: red
+  }
+  a:hover,
+  .no-link a:hover {
+    color: teal
+  }
