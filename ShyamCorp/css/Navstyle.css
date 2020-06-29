@@ -1,6 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 
 ul#brand-list li{
     text-decoration: none;
     list-style: none;
+
+}
+
+nav{
+    height: 60px;
+}
+div.nav>ul{
+margin:auto;
+width: 100vh;
+border-bottom: 1px solid blue;
+
+}
+
+div.nav>ul li a{
+color:white;
+display:block;
+
+text-decoration: none;
+
+}
+
+div.nav>ul li{
+    display: inline-block;
+list-style: none;
+    line-height: 60px;
+    font-size: 1em;
+    margin:10px 50px;
+    border-right: 1px solid white;
+    
 
 }
