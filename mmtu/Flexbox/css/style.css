@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+.container{
+    padding: 16px;
+    max-width: 1200px; 
+    /* will not apply wrapper after 1200px */
+    margin:0 auto;
+    /* will centre after 1200px */
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    
+    display: flex;
+   flex-flow: row wrap;
+   
+   
+   border: 4px double red;
+
+
+}
+ul li{
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 1em;
+    list-style: none;
+    
+}
+
+.wrapper{
+    margin:50px;
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-end;
+
+}
