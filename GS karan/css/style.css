@@ -1,176 +1,182 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap');
 
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
-    margin:0;
+body {
+    margin: 0;
     background: #386cb0;
-    color:white;
+    color: white;
     font-family: 'Montserrat';
 }
 
-a{
-    color:white;
+a {
+    color: white;
     text-decoration: none;
-    
+
 }
 
-ul{
+ul {
     list-style: none;
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 
-.hero-wrapper{
+.hero-wrapper {
     /* background : #5C9BED */
     background: #438cec;
 }
 
-.wrapper{
+.wrapper {
     padding: 16px;
-    max-width: 1200px; 
+    max-width: 1200px;
     /* will not apply wrapper after 1200px */
-    margin:0 auto;
+    margin: 0 auto;
     /* will centre after 1200px */
 
 }
 
-header{
+header {
     display: flex;
     /* will make collumns of content */
     justify-content: space-between;
     /* make equal space */
-    
+
 }
 
-header .logo{
+header .logo {
     font-weight: bold;
 }
 
-header nav ul{
-    display:flex;
+header nav ul {
+    display: flex;
 }
 
-nav ul li a{
+nav ul li a {
     padding: .6em;
     text-decoration: none;
 
 }
 
 
-.hero-content{
+.hero-content {
     margin: 4em 0 2em;
+    /* to give whitespace at top */
 }
 
-.hero-content .subtitle{
-    margin-bottom: 0;
-    /* cause there is default padding of p tag inside subtitle */
-
-}
-
-.second-wrapper{
+.second-wrapper {
     background: #5C9BED;
-    
+
 }
-.second-wrapper h2{
+
+/* to centre title and applying bar effect from right */
+.bar {
+    text-align: center;
+
+}
+
+.bar h2.work {
+    display: inline-block;
     margin-top: 0;
     padding-top: 1em;
-    padding-left:.5em;
-    font-size: 1.5em;
-    text-align: center;
+    padding-left: .5em;
     position: relative;
+   
 }
 
-.second-wrapper h2::before{
+.bar h2.work::before {
     content: " ";
     position: absolute;
     height: 5px;
     width: 30px;
     background: #3d80d8;
-    top:2.3em;
-    right:1.3em;
-
+    top: 2.3em;
+    right: -.6em;
 }
 
-ul li a{
+ul li a {
     text-decoration: underline;
 }
 
-.work{
+/* grid layout by designer YT */
+.work {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(130px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
     justify-content: space-around;
-  
 }
 
-.work li{
+.work li {
     margin-bottom: 1.5em;
 
 }
 
-.work li span{
+.work li span {
     display: block;
-    
+
 }
 
-.storng{
-    font-size:1.2em;
-}
 
-.extended-wrapper{
+
+.sub-conten {
     padding: 0 1.5em 2em;
-    max-width: 1230px;
+    text-align: justify;
+    /* max-width: 1230px; */
     margin: 0 auto;
 }
 
-.third-wrapper h2{
-    padding-left:.5em;
-    font-size: 1.5em;
-    text-align: center;
+/* to get the different color bar at end of title */
+.bar h2.connect {
+    display: inline-block;
+    margin-top: 0;
+    padding-top: 1em;
+    padding-left: .5em;
     position: relative;
+   
 }
 
-.third-wrapper h2::before{
+.bar h2.connect::before{
     content: " ";
     position: absolute;
     height: 5px;
     width: 30px;
     background: #3d80d8;
-    top:1.2em;
-    right:2.8em;
+    top: 2.3em;
+    right: -1em;
 }
 
-.social-profile{
+
+/* grid layout by designer YT */
+.social-profile {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(130px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
     justify-content: space-around;
 }
-.social-profile span{
+
+.social-profile span {
     display: block;
 }
 
 
 
-
-@media (min-width:650px)
-{
-    body{
+/* After 650px */
+@media (min-width:650px) {
+    body {
         font-size: 18px;
     }
 
-    .wrapper{
-        padding:1.5em 4em;
+    .wrapper {
+        padding: 1.5em 4em;
     }
 }
 
-@media(min-width:853px){
+@media(min-width:853px) {
 
-    body{
+    body {
         font-size: 20px;
     }
-    h1{
-        font-size:2.5em;
+
+    h1 {
+        font-size: 2.5em;
     }
 }
