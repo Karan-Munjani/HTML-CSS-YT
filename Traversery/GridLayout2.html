@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+
+    <style>
+        .wrapper{
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* grid-template-columns: repeat(3 ,1fr,2fr); */
+            grid-template-columns: repeat(3 ,1fr);
+            grid-gap: 1em;
+            /* grid-auto-rows: 100px; */
+            grid-auto-rows:minmax(100px,auto);
+        }
+        .wrapper div{
+            background: #eeeeee;
+            padding:1em;
+
+        }
+        .wrapper div:nth-child(odd){
+            background: #dddddd;
+
+        }
+
+        .nested{
+            display: grid;
+            grid-template-columns: repeat(3 ,1fr);
+            grid-auto-rows: 70px;
+            grid-gap: 1em;
+        }
+        .nested>div{
+            border:2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>Lorem ipsum dolor sit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam unde voluptate ea saepe voluptatem placeat modi expedita quibusdam fugit atque laudantium, consequuntur amet. Deserunt pariatur, iure dolorem incidunt temporibus est.</div>
+        <div>Lorem ipsum dolor sit.</div>
+        <div class="nested">
+            <div>KARAN MUNJANI</div>
+            <div>KARAN MUNJANI</div>
+            <div>KARAN MUNJANI</div>
+            </div>
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem ipsum dolor sit.</div>
+
+    </div>    
+</body>
+</html>

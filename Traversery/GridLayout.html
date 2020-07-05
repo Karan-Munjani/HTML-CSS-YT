@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+
+
+    <style>
+
+        .wrapper{
+            display:grid;
+            grid-template-columns: 70% 30%;
+            /* grid-column-gap: 1em;
+            grid-row-gap: 1em; */
+            
+        }
+        .wrapper div{
+            background: #eeeeee;
+            padding:1em;
+        }
+
+        .wrapper>div:nth-child(even){
+            background-color: #dddddd;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores aliquam dignissimos aut. Debitis consectetur doloribus, quas impedit vel obcaecati provident est voluptate voluptates possimus aut odit officiis! Illo, incidunt earum!</div>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores aliquam dignissimos aut. Debitis consectetur doloribus, quas impedit vel obcaecati provident est voluptate voluptates possimus aut odit officiis! Illo, incidunt earum!</div>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores aliquam dignissimos aut. Debitis consectetur doloribus, quas impedit vel obcaecati provident est voluptate voluptates possimus aut odit officiis! Illo, incidunt earum!</div>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores aliquam dignissimos aut. Debitis consectetur doloribus, quas impedit vel obcaecati provident est voluptate voluptates possimus aut odit officiis! Illo, incidunt earum!</div>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores aliquam dignissimos aut. Debitis consectetur doloribus, quas impedit vel obcaecati provident est voluptate voluptates possimus aut odit officiis! Illo, incidunt earum!</div>
+        <div>hello um!</div>
+
+    </div>
+</body>
+</html>

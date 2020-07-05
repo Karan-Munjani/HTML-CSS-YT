@@ -18,14 +18,9 @@ header{
     justify-content: space-between;
 }
 ul{
-    
-    display: flex;
-   flex-flow: row wrap;
-   
-   
+   display: flex;
+   flex-flow: row wrap;   
    border: 4px double red;
-
-
 }
 ul li{
     display: flex;

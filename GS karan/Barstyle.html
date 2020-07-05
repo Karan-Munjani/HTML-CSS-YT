@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bar style</title>
+    <style>
+      body {
+        background-color: #222725;
+        color: #f7f7f2;
+      }
+      .bar {
+        text-align: center;
+      }
+
+      .bar h1.title {
+        display: inline-block;
+        margin-top: 0;
+        padding-top: 1em;
+        padding-left: 0.5em;
+        position: relative;
+      }
+      .bar h1.title::before {
+        content: " ";
+        position: absolute;
+        height: 5px;
+        width: 30px;
+        background: #899878;
+        top: 2.19em;
+        right: -0.4em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bar">
+      <h1 class="title">Hello Its Bar Style</h1>
+    </div>
+  </body>
+</html>
