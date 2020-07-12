@@ -3,21 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keyframes And Animation</title>
-
+    <title>Keyframes And animation</title>
     <style>
-        :root{
-            --color:blue;
-
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
         }
-        h1{
-            background-color: var(--color);
-        }
+.container{
+    
+    background: #424B54;
+    border: 1px solid black;
+    align-items: center;
 
+}
+
+.box{
+    background: #2292A4;
+    width:auto;
+    height: 2em;
+    position: relative;
+    animation-name: loading;
+    color:white;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.box2{
+    background: #2292A4;
+    width:5em;
+    height: 5em;
+    position: relative;
+    animation-name: loading2;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    color:white;
+}
+
+
+@keyframes loading2 {
+    0%{
+        top:0px;
+        left:0px;
         
+    }
+    25%{
+        top:250px;
+        left:0;
+    }
+    75%{
+        left:250px;
+        top:250px;
+    }
+    100%{
+        top:0;
+        left:250px;
+    }
+   
+}
+@keyframes loading {
+    from{
+        width: 8em;
+    }
+    to{
+        width:100vw;
+    }
+}
     </style>
 </head>
 <body>
-    <h1>hello world</h1>
+
+<div class="container">
+
+    <div class="box">
+    Wait While Loading
+    </div>
+
+    
+</div>
+<div class="box2">
+    <p>Jumping square</p>
+</div>
+    
 </body>
 </html>

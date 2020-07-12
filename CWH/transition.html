@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+      }
+      .box {
+        display: flex;
+        height: 100px;
+        width: 150px;
+        padding: 1em;
+        margin: 1em;
+        background-color: #e9dcd8;
+        justify-content: center;
+        align-items: center;
+        /* transition-property: background;
+        transition-property: width;
+        transition-property: height; */
+        transition-property: all;
+
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+      }
+
+      .box:hover {
+        background: #e4633c;
+        cursor: pointer;
+        background: var(--color);
+        color: white;
+        height: 105px;
+        width: 160px ;
+        
+      }
+      .red {
+        --color: red;
+      }
+      .blue {
+        --color: blue;
+      }
+      .yellow {
+        --color: rgb(180, 180, 9);
+      }
+    </style>
+  </head>
+  <body>
+    <h3>This is A css Transition tutorial</h3>
+
+    <div class="container">
+      <div class="red box">Red</div>
+      <div class="blue box">Blue</div>
+      <div class="yellow box">Yellow</div>
+    </div>
+  </body>
+</html>

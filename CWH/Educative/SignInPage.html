@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=.75" />
+    <title>Let's Start</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+      * {
+        box-sizing: border-box;
+      }
+      .hero-title {
+        font-size: 34px;
+        text-align: center;
+  margin-top: 1em;
+
+       padding: 15px;
+
+      }
+      main {
+        width: 75%;
+        margin: 0 auto;
+      }
+      body {
+        background-color: #3a4958;
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        /* align horizontally */
+        justify-content: center;
+
+        /* align vertically */
+        align-items: center;
+      }
+      img {
+        width: 277px;
+        height: 298px;
+        border-radius: 50%;
+      }
+      .picture {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.5em;
+      }
+      p {
+        line-height: 1.8em;
+      }
+      div > h3 {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 1em;
+      }
+      form {
+        border-top: 1px solid black;
+      }
+      form > h3 {
+        margin-top: 13px;
+        text-align: center;
+        font-size: 1.5em;
+      }
+      .text-box{
+          width: 100%;
+          overflow: hidden;
+          font-size: 20px;
+          padding:8px 0;
+          border-bottom: 1px solid white;
+      }
+      input {
+        border:none;
+        outline:none;
+        background: none;
+        font-size: 1.23em;
+        color: white;
+      }
+      span{
+          display: block;
+          margin-top: 1.2em;
+      }
+      .button{
+            display: flex;
+            justify-content: center;
+            margin-top: 1.2em;
+      }
+      input[type="checkbox" i] {
+          height: 1em;
+          width: 1em;
+          float: left;
+      }
+      button{
+        border-radius: 2em;
+            font-size: 1.2em;   
+      }
+      .responsive{
+        height: auto;
+        max-width: 100%;
+      }
+
+      /* After 650px */
+@media (min-width:650px) {
+    
+    main{
+        display: flex;
+    }
+    .hero-title{
+        visibility: hidden;
+        position: absolute;
+    }
+    section,
+  form {
+    padding: 50px 70px
+  }
+
+
+  form{
+      border: none;
+  }
+
+}
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="hero-title">
+        Are You Ready For Journey?
+      </div>
+      <section class="testimonial" >
+        <div class="picture">
+          <img class="responsive"
+            src="/CWH/Educative/imgs/man-using-laptop-computer-2102415.jpg"
+            alt="Owner Image"
+          />
+        </div>
+
+        <div class="about">
+          <h3>Lucas Brandman</h3>
+          <p>
+            I have worked with Startup X’ product, and I think it is fabulous. I
+            highly recommend the use of this product. It is simply a life saver.
+          </p>
+        </div>
+      </section>
+
+      <form class="signup-form">
+        <h3>SignUp Here</h3>
+        <div>
+          <div class="text-box">
+          
+            <input type="email" class="no-outlinee"name="email" placeholder="Email Adress"/>
+          </div>
+          
+          <div class="text-box">
+            <input type="password" name="password" placeholder="Password" />
+          </div>
+        </div>
+
+        <div>
+          <input type="checkbox" name="t&C" />
+          <span>I agree to Terms & Conditions</span>
+        </div>
+        <div class="button">
+
+            <button type="submit">Sign Up</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
