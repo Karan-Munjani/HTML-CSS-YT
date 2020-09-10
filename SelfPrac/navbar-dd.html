@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="./Navstyle.css">
+</head>
+<body>
+    <nav>
+       
+        <ul class="topnav" id="dropdownClick">
+            <div class="wrapper">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">News</a></li>
+            <li class="topnav-right"><a href="#">Contact</a></li>
+            <li class="topnav-right"><a href="#">About</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">	
+                &#9776;</a></li>
+            </div>
+        </ul>
+  
+    </nav>
+
+
+    <script>
+            function dropdownMenu(){
+                var id = document.getElementById("dropdownClick");
+                if(id.className==="topnav"){
+
+                    // id.className="responsive"
+                    // by doing this ul will not inherit previous properties of topnav
+                    id.className=id.className+ " " +"responsive";
+                    // change topnav to responsive
+                    // so class would be like this== topnav responsive  
+                }
+
+                else{
+                    id.className="topnav";
+                }
+            }
+    </script>
+</body>
+</html>
